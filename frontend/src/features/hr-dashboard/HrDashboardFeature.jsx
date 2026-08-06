@@ -15,7 +15,7 @@ export function HrDashboardFeature() {
         <li>Hire-time &amp; velocity analytics</li>
         <li>Bulk operations for applicants</li>
       </ul>
-      <Button as="a" href="/hr-dashboard" variant="primary" className="btn--full">
+      <Button as="a" href="/" variant="primary" className="btn--full">
         Go to HR Suite
       </Button>
     </>

@@ -15,7 +15,7 @@ export function JobListingsFeature() {
         <li>Live status application tracker</li>
         <li>Actionable profile optimization tips</li>
       </ul>
-      <Button as="a" href="/job-search" variant="primary" className="btn--full">
+      <Button as="a" href="/" variant="primary" className="btn--full">
         Start Searching
       </Button>
     </>
