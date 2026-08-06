@@ -1,0 +1,25 @@
+Please generate a comprehensive "Project Master Context Specification" in Markdown for my project. This document will serve as the single source of truth to initialize fresh AI sessions.
+
+Include the following sections based on our work so far:
+
+1. PROJECT OVERVIEW & GOALS
+   - Project name, target platform, domain (HR management platform / candidate pipeline / job listings).
+   - Core philosophy: Modular architecture, dynamic state, and future backend readiness (no hardcoded static UI).
+
+2. DIRECTORY STRUCTURE & CONVENTIONS
+   - Include the exact project folder tree:
+   - Outline strict rules: Component extraction into `src/components/ui/`, feature encapsulation via root `index.js` barrels, custom hooks for state/business logic, and isolated API abstraction layers (`candidateApi.js`).
+
+3. DESIGN SYSTEM & VISUAL TOKENS (Glassmorphism)
+   - Color variables (`--bg`, `--panel`, `--fg`, `--muted`, `--border`, `--accent`, `--accent-glow`).
+   - Typography, border radius, background gradients, and hover state transitions.
+   - Base UI primitives (`GlassCard`, `Button` with red gradient and secondary variants).
+
+4. IMPLEMENTED FEATURES & ARCHITECTURE
+   - Detailed status of components created so far (e.g., HR Candidate Pipeline with drag-and-drop workflow stages: Applied, Reviewing, Interview, Offer).
+   - Mock API layer patterns (Promises simulating backend endpoints for fetch/patch operations).
+
+5. ROADMAP & REMAINING FEATURES
+   - List upcoming pages and features to build .
+
+Make the document complete, clear, and actionable.

@@ -1,0 +1,35 @@
+Transform the static HTML/CSS provided at the end into a modular, production-ready React setup. 
+
+Strictly follow this project directory structure:
+
+src/
+├── assets/
+├── components/
+│   ├── ui/               # Reusable UI primitives (GlassCard, Button, Input, Modal, etc.)
+│   └── layout/           # Global layout (Navbar, Sidebar, Footer, Header)
+├── config/
+├── context/
+├── features/
+├── styles/               # Extracted CSS & CSS Variables
+├── App.jsx
+└── main.jsx
+
+Implementation Rules:
+
+1. STYLES & UI PRIMITIVES (src/styles/ & src/components/ui/):
+   - Extract all CSS variables, resets, and layout CSS into `src/styles/index.css`.
+   - Identify repeated UI components in the HTML (e.g., cards, buttons, tags, badges) and extract them into reusable components in `src/components/ui/` (e.g., `GlassCard.jsx`, `Button.jsx`).
+   - Export all UI primitives through `src/components/ui/index.js`.
+
+2. FEATURE ARCHITECTURE (src/features/<feature-name>/):
+   - API Layer (`api/`): Abstract all static data into a simulated asynchronous API module using Promises (mocking CRUD endpoints) so it can be swapped for real backend calls later.
+   - Custom Hooks (`hooks/`): Manage view state, loading status, optimistic UI updates, dynamic filtering, or interactions (e.g., drag-and-drop, modals).
+   - Domain Components (`components/`): Break the page UI down into focused components (e.g., lists, cards, board columns).
+   - Page Component (`pages/`): Combine the hooks and components into a main Page component.
+   - Barrel Export (`index.js`): Export the page, hook, and API module from the feature root.
+
+3. INTEGRATION:
+   - Render the finished page component dynamically in `src/App.jsx`.
+
+---
+STATIC HTML/CSS TO CONVERT:

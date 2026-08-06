@@ -3,6 +3,7 @@ import { LandingPage } from './features/landing'
 import { HRPipelinePage } from './features/hr-dashboard'
 import { JobSearchPage, JobListingsPage } from './features/job-listings'
 import { PostJobPage } from './features/post-job'
+import { AnalyticsPage } from './features/hr-analytics'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/post-new-job" element={<PostJobPage />} />
       <Route path="/hr-listings" element={<JobListingsPage />} />
       <Route path="/hr-listings.html" element={<JobListingsPage />} />
+      <Route path="/hr-analytics" element={<AnalyticsPage />} />
+      <Route path="/hr-analytics.html" element={<AnalyticsPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

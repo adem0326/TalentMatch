@@ -12,12 +12,10 @@ export function JobListingsPage() {
       <aside className="sidebar">
         <div className="logo">TalentMatch</div>
         <nav>
-          <a href="/hr-listings" className="active">
-            Job Listings
-          </a>
-          <a href="/hr-dashboard">Candidate Pipeline</a>
-          <a href="#">Analytics</a>
-          <a href="/">← Back to Home</a>
+          <Link to="/hr-listings" className="active">Job Listings</Link>
+          <Link to="/hr-dashboard">Candidate Pipeline</Link>
+          <Link to="/hr-analytics">Analytics</Link>
+          <Link to="/">← Back to Home</Link>
         </nav>
       </aside>
 

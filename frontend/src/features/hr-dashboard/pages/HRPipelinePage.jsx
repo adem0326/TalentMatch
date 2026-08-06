@@ -22,7 +22,7 @@ export function HRPipelinePage() {
             Candidate Pipeline
           </Link>
           <Link to="/hr-listings">Job Listings</Link>
-          <Link to="#">Analytics</Link>
+          <Link to="/hr-analytics">Analytics</Link>
         </nav>
         <Button as={Link} to="/" variant="secondary" className="sidebar__button">
           ← Back to Home

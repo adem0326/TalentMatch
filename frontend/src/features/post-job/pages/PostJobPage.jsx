@@ -55,7 +55,7 @@ export default function PostJobPage() {
         <nav>
           <Link to="/hr-listings">Job Listings</Link>
           <Link to="/hr-dashboard">Candidate Pipeline</Link>
-          <a href="#">Analytics</a>
+          <Link to="/hr-analytics">Analytics</Link>
           <Link to="/">← Back to Home</Link>
         </nav>
       </aside>
