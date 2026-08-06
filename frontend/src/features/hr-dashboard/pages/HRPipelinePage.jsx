@@ -1,4 +1,5 @@
 import { Button } from '../../../components/ui/index.js'
+import { Link } from 'react-router-dom'
 import { PipelineBoard } from '../components/PipelineBoard.jsx'
 import { usePipeline } from '../hooks/usePipeline.js'
 
@@ -17,13 +18,13 @@ export function HRPipelinePage() {
       <aside className="sidebar">
         <div className="logo">TalentMatch</div>
         <nav>
-          <a href="#" className="active">
+          <Link to="/hr-dashboard" className="active">
             Candidate Pipeline
-          </a>
-          <a href="#">Job Listings</a>
-          <a href="#">Analytics</a>
+          </Link>
+          <Link to="/hr-listings">Job Listings</Link>
+          <Link to="#">Analytics</Link>
         </nav>
-        <Button as="a" href="/" variant="secondary" className="sidebar__button">
+        <Button as={Link} to="/" variant="secondary" className="sidebar__button">
           ← Back to Home
         </Button>
       </aside>

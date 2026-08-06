@@ -1,5 +1,5 @@
-import { GlassCard } from '../../../components/ui/index.js'
-import { Button } from '../../../components/ui/index.js'
+import { GlassCard, Button } from '../../../components/ui/index.js'
+import { Link } from 'react-router-dom'
 import { Navbar } from '../../../components/layout/Navbar.jsx'
 import { Footer } from '../../../components/layout/Footer.jsx'
 import { featureCards, heroContent } from '../../../config/index.js'
@@ -13,10 +13,10 @@ export function LandingPage() {
         <h1 id="hero-title">{heroContent.title}</h1>
         <p className="tagline">{heroContent.tagline}</p>
         <div className="cta-row">
-          <Button as="a" href="/hr-dashboard" variant="primary">
+          <Button as={Link} to="/hr-dashboard" variant="primary">
             HR Dashboard
           </Button>
-          <Button as="a" href="/job-search" variant="secondary">
+          <Button as={Link} to="/job-search" variant="secondary">
             Browse Jobs
           </Button>
         </div>
@@ -48,7 +48,7 @@ export function LandingPage() {
                 <li>Hire-time & velocity analytics</li>
                 <li>Bulk operations for applicants</li>
               </ul>
-              <Button as="a" href="/hr-dashboard/" variant="primary" className="btn--full">
+              <Button as={Link} to="/hr-dashboard" variant="primary" className="btn--full">
                 Go to HR Suite
               </Button>
             </GlassCard>
@@ -66,7 +66,7 @@ export function LandingPage() {
                 <li>Live status application tracker</li>
                 <li>Actionable profile optimization tips</li>
               </ul>
-              <Button as="a" href="/job-search" variant="primary" className="btn--full">
+              <Button as={Link} to="/job-search" variant="primary" className="btn--full">
                 Start Searching
               </Button>
             </GlassCard>

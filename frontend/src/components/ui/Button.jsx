@@ -1,5 +1,6 @@
 const variants = {
   primary: 'btn--primary',
+  red: 'btn--primary',
   secondary: 'btn--secondary',
 }
 
@@ -10,7 +11,7 @@ export function Button({
   className = '',
   ...props
 }) {
-  const Component = as === 'a' ? 'a' : 'button'
+  const Component = as || 'button'
   const buttonClassName = ['btn', variants[variant] ?? variants.primary, className]
     .filter(Boolean)
     .join(' ')

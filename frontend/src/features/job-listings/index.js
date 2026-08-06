@@ -1,2 +1,5 @@
 export { JobListingsFeature } from './JobListingsFeature.jsx'
 export { JobSearchPage } from './pages/JobSearchPage.jsx'
+export { JobListingsPage } from './pages/JobListingsPage.jsx'
+export { useJobs } from './hooks/useJobs.js'
+export * from './api/jobsApi.js'
