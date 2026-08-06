@@ -2,6 +2,7 @@ import { useJobs } from '../hooks/useJobs.js'
 import { FilterBar } from '../components/FilterBar.jsx'
 import { JobTable } from '../components/JobTable.jsx'
 import { Button } from '../../../components/ui/index.js'
+import { HrSidebar } from '../../../components/layout/HrSidebar.jsx'
 import { Link } from 'react-router-dom'
 
 export function JobListingsPage() {
@@ -9,15 +10,7 @@ export function JobListingsPage() {
 
   return (
     <div className="dashboard">
-      <aside className="sidebar">
-        <div className="logo">TalentMatch</div>
-        <nav>
-          <Link to="/hr-listings" className="active">Job Listings</Link>
-          <Link to="/hr-dashboard">Candidate Pipeline</Link>
-          <Link to="/hr-analytics">Analytics</Link>
-          <Link to="/">← Back to Home</Link>
-        </nav>
-      </aside>
+      <HrSidebar />
 
       <div className="main">
         <div className="header">

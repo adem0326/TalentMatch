@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { Button, GlassCard } from '../../../components/ui'
 import { usePostJob } from '../hooks/usePostJob'
 
@@ -53,9 +53,9 @@ export default function PostJobPage() {
       <aside className="sidebar">
         <div className="logo">TalentMatch</div>
         <nav>
-          <Link to="/hr-listings">Job Listings</Link>
-          <Link to="/hr-dashboard">Candidate Pipeline</Link>
-          <Link to="/hr-analytics">Analytics</Link>
+          <NavLink to="/hr-dashboard">Candidate Pipeline</NavLink>
+          <NavLink to="/hr-listings">Job Listings</NavLink>
+          <NavLink to="/hr-analytics">Analytics</NavLink>
           <Link to="/">← Back to Home</Link>
         </nav>
       </aside>

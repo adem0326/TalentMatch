@@ -1,5 +1,4 @@
-import { Button } from '../../../components/ui/index.js'
-import { Link } from 'react-router-dom'
+import { HrSidebar } from '../../../components/layout/HrSidebar.jsx'
 import { PipelineBoard } from '../components/PipelineBoard.jsx'
 import { usePipeline } from '../hooks/usePipeline.js'
 
@@ -15,19 +14,7 @@ export function HRPipelinePage() {
 
   return (
     <div className="dashboard">
-      <aside className="sidebar">
-        <div className="logo">TalentMatch</div>
-        <nav>
-          <Link to="/hr-dashboard" className="active">
-            Candidate Pipeline
-          </Link>
-          <Link to="/hr-listings">Job Listings</Link>
-          <Link to="/hr-analytics">Analytics</Link>
-        </nav>
-        <Button as={Link} to="/" variant="secondary" className="sidebar__button">
-          ← Back to Home
-        </Button>
-      </aside>
+      <HrSidebar />
 
       <div className="main">
         <header className="header">

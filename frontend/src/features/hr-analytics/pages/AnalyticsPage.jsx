@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HrSidebar } from '../../../components/layout/HrSidebar'
 import { useAnalytics } from '../hooks/useAnalytics'
 import KpiCard from '../components/KpiCard'
 import { GlassCard } from '../../../components/ui'
@@ -16,14 +16,7 @@ export default function AnalyticsPage() {
 
   return (
     <div className="dashboard">
-      <aside className="sidebar">
-        <div className="logo">TalentMatch</div>
-        <nav>
-          <Link to="/hr-dashboard">Pipeline Board</Link>
-          <Link to="/hr-analytics" className="active">Analytics</Link>
-          <Link to="/hr-listings">Job Listings</Link>
-        </nav>
-      </aside>
+      <HrSidebar />
 
       <main className="main">
         <header className="header">
